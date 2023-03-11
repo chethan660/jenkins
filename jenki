@@ -4,8 +4,8 @@ pipeline {
 		string ( name: 'NAME', description: 'Enter your name here' )
 		text (name: 'DESCRIPTION', description: 'Enter your details here')
         	booleanparam (name: 'BOOL', description: 'Enter your yes/no here')
-        	choice(name: 'CHOOSE BRANCH', choices: ['master','feature','hotfix'], description: 'Enter branch to build')
-        	choice(name: 'CHOOSE ENV', choices: ['TEST','QA','PROD'], description: 'enter environment to deploy')
+        	choice (name: 'CHOOSE BRANCH', choices: ['master','feature','hotfix'], description: 'Enter branch to build')
+        	choice (name: 'CHOOSE ENV', choices: ['TEST','QA','PROD'], description: 'enter environment to deploy')
         	password (name: 'SERVER_PWD', description: 'Enter your server password here')
 	}
      	stages {
